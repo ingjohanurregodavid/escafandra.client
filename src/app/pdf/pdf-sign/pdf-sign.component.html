@@ -1,0 +1,5 @@
+<h2>Firmar PDF</h2>
+<div *ngFor="let pdf of pdfList">
+  <p>{{ pdf.fileName }}</p>
+  <button mat-button (click)="signPdf(pdf.id)">Firmar PDF</button>
+</div>

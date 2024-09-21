@@ -1,0 +1,7 @@
+<h2>Subir PDF</h2>
+<form (submit)="onSubmit()">
+  <mat-form-field>
+    <input type="file" (change)="onFileSelected($event)" />
+  </mat-form-field>
+  <button type="submit" mat-raised-button color="primary">Subir PDF</button>
+</form>

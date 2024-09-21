@@ -1,0 +1,10 @@
+<h2>Lista de PDFs</h2>
+<table mat-table [dataSource]="pdfList">
+  <ng-container matColumnDef="fileName">
+    <th mat-header-cell *matHeaderCellDef>Nombre del Archivo</th>
+    <td mat-cell *matCellDef="let element">{{ element.fileName }}</td>
+  </ng-container>
+  
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

@@ -1,0 +1,5 @@
+<h2>Descargar PDF</h2>
+<div *ngFor="let pdf of pdfList">
+  <p>{{ pdf.fileName }}</p>
+  <button mat-button (click)="downloadPdf(pdf.id)">Descargar PDF</button>
+</div>
